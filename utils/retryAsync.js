@@ -23,9 +23,9 @@ export async function retryAsync(asyncFn, options = {}) {
     }
 
     const {
-        retries = 0,
-        delay = 0,
-        backoff = false
+        retries = 3,
+        delay = 1000,
+        backoff = true
     } = options;
 
     if (retries < 0 || delay < 0) {
