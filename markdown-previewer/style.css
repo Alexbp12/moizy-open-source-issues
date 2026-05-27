@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color: #222;
+}
+
+.app {
+  max-width: 1400px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.editor-container {
+  display: flex;
+  gap: 20px;
+}
+
+#markdown-input,
+#preview {
+  width: 50%;
+  min-height: 550px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#markdown-input {
+  resize: vertical;
+  font-size: 16px;
+  outline: none;
+  line-height: 1.6;
+}
+
+#preview {
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .editor-container {
+    flex-direction: column;
+  }
+
+  #markdown-input,
+  #preview {
+    width: 100%;
+  }
+}
+pre {
+  background-color: #222;
+  color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 20px;
+}
+blockquote {
+  border-left: 4px solid #555;
+  padding-left: 10px;
+  margin: 10px 0;
+  color: #444;
+  font-style: italic;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
